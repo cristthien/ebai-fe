@@ -1,10 +1,12 @@
 import CategoryMenu from "@/components/Home/SuggestionCategory";
-import { Button } from "@/components/ui/button";
+import MainLayout from "./layouts/main";
 
 export default function Home() {
   return (
-    <div className="container mx-auto text-blue">
-      <CategoryMenu />
-    </div>
+    <MainLayout>
+      <div className="container mx-auto text-blue">
+        <CategoryMenu />
+      </div>
+    </MainLayout>
   );
 }

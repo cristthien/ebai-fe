@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import { Open_Sans } from "next/font/google"; // Import Open Sans from Google Fonts
 import "./globals.css";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 
 // Load Open Sans font with various weights
 const openSans = Open_Sans({
@@ -22,11 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${openSans.className} antialiased`}>
-        <Header />
-        {children}
-        <Footer />
-      </body>
+      <body className={`${openSans.className} antialiased`}>{children}</body>
     </html>
   );
 }
