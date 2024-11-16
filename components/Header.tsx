@@ -1,11 +1,3 @@
-import { Button } from "./ui/button";
-import { Input } from "@/components/ui/input";
-import {
-  Select,
-  SelectTrigger,
-  SelectItem,
-  SelectContent,
-} from "@/components/ui/select";
 import { Heart, Bell, User, Search } from "lucide-react";
 import {
   NavigationMenu,
@@ -16,7 +8,7 @@ import {
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
 import Divider from "./ui/Divider";
-import Menu from "@/components/common/Menu";
+import Image from "next/image";
 
 export default function Header() {
   return (
@@ -54,7 +46,13 @@ export default function Header() {
       <div className="container mx-auto flex items-center justify-between px-6 py-4">
         {/* Left Section */}
         <div className="flex items-center ">
-          <span className="text-2xl font-bold text-red-600">eBay</span>
+          <Image
+            src="/ebai.svg" // Đường dẫn tương đối từ thư mục public
+            alt="Example SVG"
+            width={80} // Đặt kích thước
+            height={32}
+            className="mr-2"
+          />
           <Categories />
         </div>
         {/* Search Bar */}
@@ -68,7 +66,7 @@ export default function Header() {
 
           {/* Nút kính lúp */}
           <button
-            className="flex items-center justify-center w-8 h-8 rounded-full bg-blue-600 text-white hover:bg-blue-700 focus:outline-none m-1"
+            className="flex items-center justify-center w-8 h-8 rounded-full bg-[#3665f3] text-white hover:bg-blue-700 focus:outline-none m-1"
             aria-label="Search"
           >
             <Search size={20} /> {/* Kích thước biểu tượng */}
