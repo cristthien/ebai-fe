@@ -26,7 +26,8 @@ export default function ImageFrame({
         src={src}
         fill={true}
         className={ImageClassName}
-        sizes="100vw"
+        // sizes="100vw"
+        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
       />
     </div>
   );

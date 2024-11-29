@@ -38,7 +38,7 @@ const data = [
     leftSubcontent: "Iphone 16 Pro",
     rightSubcontent: "Làm việc mọi nơi",
     rightContent: "Mỏng Hơn. Đỉnh Hơn",
-    href: "/iphone",
+    href: "/categories/41",
   },
   {
     banner: "/slider2.png",
@@ -46,7 +46,7 @@ const data = [
     leftSubcontent: "Ipad Air m2 ",
     rightSubcontent: "Học tập phi thường",
     rightContent: "Vô cùng mạnh mẽ",
-    href: "/ipad",
+    href: "/categories/25",
   },
   {
     banner: "/slider3.png",
@@ -54,7 +54,7 @@ const data = [
     leftSubcontent: "Macbook 16inch Pro",
     rightContent: "Làm việc năng xuất",
     rightSubcontent: "Đẹp Biểu Tượng",
-    href: "/macbook",
+    href: "/categories/21",
   },
 ];
 

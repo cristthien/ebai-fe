@@ -3,12 +3,12 @@
 // Import styles
 // Fetch or get data
 
-interface loginProps {
+interface pageProps {
   className?: string;
 }
 
-const login: React.FC<loginProps> = ({ className }) => {
-  return <div className={className}>login</div>;
+const page: React.FC<pageProps> = ({ className }) => {
+  return <div className={className}>page</div>;
 };
 
-export default login;
+export default page;
