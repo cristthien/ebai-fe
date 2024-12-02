@@ -31,6 +31,7 @@ const request = async <Response>(
     options?.baseUrl === undefined
       ? process.env.NEXT_PUBLIC_API_URL
       : options.baseUrl;
+  console.log(baseUrl);
   if (isClient()) {
     const sessionToken = localStorage.getItem("access_token");
     if (sessionToken) {

@@ -16,7 +16,10 @@ const categoryApiRequest = {
     http.get<SpecificCategoryResType>(
       `api/v1/categories/${id}/auctions?page=${page}&limit=${limit}&${query}`
     ),
-  create: (body: any) => http.post<CategoryResType>("api/v1/categories", body),
+  create: (body: any) =>
+    http.post<CategoryResType>("api/v1/categories", body, {
+      baseUrl: process.env.NEXT_PUBLIC_CLIENT_URL,
+    }),
 };
 
 export default categoryApiRequest;
